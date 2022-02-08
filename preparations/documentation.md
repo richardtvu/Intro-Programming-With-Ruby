@@ -53,3 +53,7 @@ What is the class/module index?
 - The class/module index is the list of the other classes and modules that are contained in the same namespace. This index is kind of like the list of all the different family members in a given family. Or a list of all the students in a given school. 
 
 What is the included modules section?
+
+- Basically the collection of other code that this class can make use of.
+- e.g., the `String` class has the `Comparable` module,so the string class can make use of the methods in the comparable module. I can compare two strings to see if one comes before the other alphabetic order: `"cat" <"dog"` will produce a boolean value `true`.
+
