@@ -2,6 +2,8 @@
 
 How do you add two strings together as one string? In other words, how do you use 'interpolation'?
 
+- Use double quotes and `#{expression}`.
+
 How do you use the %operator, division or both to get the thousands, hundreds, tens, in one place of a 4 digit number?
 
 How do you store a list of movies and the release year in a hash?
