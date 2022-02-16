@@ -51,6 +51,7 @@ Take a four digit number and then / or use the % operator to get the thousands p
 ### What data structures?
 
 - I think I can use a hash table where I could use symbols for the thousands, hundreds, tens and ones. The processing would probably be a little easier to understand if I use the symbols assigned to the symbols
+- Well now that I think about it (the next day, 2/15/2022), i think that using an array would be easier to test.
 
 ### What algorithm to use, how to process the input into the output?
 
@@ -59,8 +60,6 @@ Take a four digit number and then / or use the % operator to get the thousands p
 Create a hash called digits that will contain the digits for the various places in the four digit number.
 
 Check if the number is positive. If number is less than 0, multiply the number by  -1.
-
-
 
 
 ## Coding?
