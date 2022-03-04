@@ -38,17 +38,55 @@ Algorithm:
 
 How would I test this program?
 - I would like to return both the original array and the new array with the method are created. Returning the original array allows me to confirm that I didn't accidentally mutate the array. Returning the new array allows me to make sure that I correctly added to to each value in the array
-
-
-I would like to create a tester method that will call my new iterator method with the original array input and the array I'd like.
-
-Accepts original array and the new array I'd like to test against.
-Calls the inheriting method with the original array and receives array of the original array and the new array.
-Put se strings asking the question: are the two array the ones we expected?
-If the array original is not equal to what we called the iterator method, then return false. Puts a message saying false and then return.
-If the new array does not match the array I expect, then return false.
-return true
-
-
-
 =end
+
+# =================================================================
+
+def iterate_add_two(array)
+  return
+end
+
+# ===================================================================
+
+# I would like to create a tester method that will call my new iterator method with the original array input and the array I'd like.
+
+# Accepts original array and the new array I'd like to test against.
+def test(original_array, expected_array)
+
+  # Calls the iterator method with the original array and receives array of the original array and the new array.
+  output_array = iterate_add_two(original_array)
+  if output_array == nil then return false end
+  original_array_processed = output_array[0]
+  added_array = output_array[1]
+  # Put a strings asking the question: are the two arrays the ones we expected?
+  puts "Are the output arrays what we expected?"
+  original_array_is_same = true
+  expected_array_matches_outputted_array = true
+  # If the array original is not equal to what we passed into the iterator method, then return false.
+  if original_array_processed != original_array then original_array_is_same = false end
+  # If the new array does not match the array I expect, then return false.
+  if added_array != expected_array then expected_array_matches_outputted_array = false end
+
+  puts "The original array is the same? #{original_array_is_same}"
+  puts "The expected array matches the actual output it array? #{expected_array_matches_outputted_array}"
+  if original_array_is_same and expected_array_matches_outputted_array then return true else return false end
+  # return true
+
+end
+
+# test
+# 1. Input: [ ]
+# Output: two empty arrays. Because if there are no values to iterate, then there is just simply be a new array
+test([], [])
+# 2. Input: [0, -2, 2]
+# Output: [2, 0, 4]
+test([0, -2, 2], [2, 0, 4])
+# 3. Input: [-0.45]
+# Output: [1.55]
+test([-0.45], [1.55])
+# 4. Input: ["a"]
+# Output: "You may only input numbers"
+test(["a"], "You may only input numbers")
+# 5. Input: nil
+# Output: "You may only input numbers"
+test(nil, "You may only input numbers")
