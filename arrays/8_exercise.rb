@@ -2,6 +2,26 @@
 =begin
 Write a program that iterate over an array and builds a new array that is the result of incremented each value in the original array by a value of 2. You should have two arrays at the end of this program, the original array and the new array you created. Print both arrays to screen using the `p` method instead of `puts`.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Problem:
 Input: An array of values
 Output: Print the following using the p method.
